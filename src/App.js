@@ -5,7 +5,7 @@ import './index.css'
 
 function App() {
   return (
-    <Button color='yo' >Default</Button>
+    <Button variant='s'  >Default</Button>
 
   );
 }
