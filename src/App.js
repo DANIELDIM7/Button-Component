@@ -2,10 +2,11 @@
 import './App.css';
 import Button from './components/Button';
 import './index.css'
+import Home from './pages/Home';
 
 function App() {
   return (
-    <Button variant='s'  >Default</Button>
+    <Home/>
 
   );
 }

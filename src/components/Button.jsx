@@ -38,7 +38,10 @@ const ButtonDesign = styled.button`
       return "rgba(61, 90, 254, 1)";
     } else if (props.disabled && props.variant === "text") {
       return "rgba(158, 158, 158, 1)";
-    } else {
+    } else if (props.color === 'primary' || props.color === 'secondary' || props.color === 'danger') {
+      return 'rgba(255, 255, 255, 1)';
+    }
+    else {
       return "color: rgba(63, 63, 63, 1)";
     }
   }};
@@ -67,6 +70,7 @@ const ButtonDesign = styled.button`
       return "none";
     }
   }};
+
   box-shadow: ${(props) => {
     if (props.variant === "text") {
       return "none";
@@ -80,15 +84,24 @@ const ButtonDesign = styled.button`
   &:hover,
   &:focus {
     background-color: ${(props) => {
-      if (props.variant === "outline") {
-        return "rgba(41, 98, 255, 0.1)";
-      } else if (props.variant === "text") {
-        return "rgba(41, 98, 255, 0.1)";
-      } else {
-        return "rgba(51, 51, 51, 0.2)";
-      }
-    }};
+    if (props.variant === "outline") {
+      return "rgba(41, 98, 255, 0.1)";
+    } else if (props.variant === "text") {
+      return "rgba(41, 98, 255, 0.1)";
+    } else if (props.color === 'primary') {
+      return 'rgba(0, 57, 203, 1)';
+
+    } else if (props.color === 'secondary') {
+      return 'rgba(28, 49, 58, 1)'
+    } else if (props.color === 'danger') {
+      return 'rgba(154, 0, 7, 1)'
+    }
+    else {
+      return "rgba(51, 51, 51, 0.2)";
+    }
+  }};
   }
+  
 `;
 
 const ButtonIcon = styled.a`
@@ -110,6 +123,26 @@ const ButtonIcon = styled.a`
   box-shadow: 0px 2px 3px 0px rgba(51, 51, 51, 0.2);
   color: rgba(255, 255, 255, 1);
   font-weight: 500;
+  &:hover,
+  &:focus {
+    background-color: ${(props) => {
+    if (props.variant === "outline") {
+      return "rgba(41, 98, 255, 0.1)";
+    } else if (props.variant === "text") {
+      return "rgba(41, 98, 255, 0.1)";
+    } else if (props.color === 'primary') {
+      return 'rgba(0, 57, 203, 1)';
+
+    } else if (props.color === 'secondary') {
+      return 'rgba(28, 49, 58, 1)'
+    } else if (props.color === 'danger') {
+      return 'rgba(154, 0, 7, 1)'
+    }
+    else {
+      return "rgba(51, 51, 51, 0.2)";
+    }
+  }};
+  }
 `;
 
 const Button = (props) => {
