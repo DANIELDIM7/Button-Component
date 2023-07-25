@@ -33,6 +33,17 @@ display: flex;
 justify-content:space-between
 
 `
+const TextButtons = styled.p`
+font-size: 12px;
+font-weight:400;
+color: rgba(51, 51, 51, 1);
+`
+
+const ButtonDiv = styled.div`
+display: flex;
+flex-direction:column;
+place-content:center;
+`
 
 function Home() {
   return (
@@ -51,36 +62,63 @@ function Home() {
         </Aside>
         <SecondContainer>
           <ContainerButtons>
-            <Button>Default</Button>
+            <ButtonDiv>
+              <TextButtons>{`<Button/>`}</TextButtons>
+              <Button>Default</Button>
+            </ButtonDiv>
           </ContainerButtons>
           <ContainerButtons>
-            <Button variant='outline'>Default</Button>
+            <ButtonDiv>
+              <TextButtons>{`<Button variant='outline'`}</TextButtons>
+              <Button variant='outline'>Default</Button>
+            </ButtonDiv>
           </ContainerButtons>
           <ContainerButtons>
-            <Button variant='text'>Default</Button>
+            <ButtonDiv>
+              <TextButtons>{`<Button variant='text'/>`}</TextButtons>
+              <Button variant='text'>Default</Button>
+            </ButtonDiv>
+
           </ContainerButtons>
           <ContainerButtons>
-            <Button disableShadow>Default</Button>
+            <ButtonDiv>
+              <TextButtons>{`<Button disableShadow/>`}</TextButtons>
+              <Button disableShadow color='primary'>Default</Button>
+            </ButtonDiv>
+
           </ContainerButtons>
           <ContainerButtons>
-            <Button disabled>Default</Button>
+            <ButtonDiv>
+              <TextButtons>{`<Button disabled/>`}</TextButtons>
+              <Button disabled>Default</Button>
+            </ButtonDiv>
+
           </ContainerButtons>
           <ContainerButtons>
-            <Button starIcon>Default</Button>
-            <Button endIcon>Default</Button>
+            <ButtonDiv>
+              <TextButtons>{`<Button startIcon/>`}</TextButtons>
+              <Button starIcon>Default</Button>
+            </ButtonDiv>
+            <ButtonDiv>
+              <TextButtons>{`<Button endIcon/>`}</TextButtons>
+              <Button endIcon>Default</Button>
+            </ButtonDiv>
+
+
+
           </ContainerButtons>
           <ContainerButtons>
-            <Button  color='primary'size='sm'>Default</Button>
-            <Button  color='primary'size='md'>Default</Button>
-            <Button  color='primary'size='lg'>Default</Button>
-            
+            <Button color='primary' size='sm'>Default</Button>
+            <Button color='primary' size='md'>Default</Button>
+            <Button color='primary' size='lg'>Default</Button>
+
           </ContainerButtons>
           <ContainerButtons>
             <Button >Default</Button>
-            <Button  color='primary'>Primary</Button>
-            <Button  color='secondary'>Secondary</Button>
-            <Button  color='danger'>Danger</Button>
-            
+            <Button color='primary'>Primary</Button>
+            <Button color='secondary'>Secondary</Button>
+            <Button color='danger'>Danger</Button>
+
           </ContainerButtons>
 
 
