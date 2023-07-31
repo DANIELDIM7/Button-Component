@@ -108,16 +108,42 @@ function Home() {
 
           </ContainerButtons>
           <ContainerButtons>
-            <Button color='primary' size='sm'>Default</Button>
-            <Button color='primary' size='md'>Default</Button>
-            <Button color='primary' size='lg'>Default</Button>
+            <ButtonDiv>
+              <TextButtons>{`<Button size='sm'/>`}</TextButtons>
+              <Button color='primary' size='sm'>Default</Button>
+            </ButtonDiv>
+            <ButtonDiv>
+              <TextButtons>{`<Button size='md'/>`}</TextButtons>
+              <Button color='primary' size='md'>Default</Button>
+            </ButtonDiv>
+            <ButtonDiv>
+              <TextButtons>{`<Button size='lg'/>`}</TextButtons>
+              <Button color='primary' size='lg'>Default</Button>
+
+            </ButtonDiv>
+
 
           </ContainerButtons>
           <ContainerButtons>
-            <Button >Default</Button>
-            <Button color='primary'>Primary</Button>
-            <Button color='secondary'>Secondary</Button>
-            <Button color='danger'>Danger</Button>
+            <ButtonDiv>
+              <TextButtons>{`<Button color='default'/>`}</TextButtons>
+              <Button >Default</Button>
+            </ButtonDiv>
+            <ButtonDiv>
+              <TextButtons>{`<Button color='primary'/>`}</TextButtons>
+              <Button color='primary'>Primary</Button>
+            </ButtonDiv>
+            <ButtonDiv>
+              <TextButtons>{`<Button color='secondary'/>`}</TextButtons>
+              <Button color='secondary'>Secondary</Button>
+            </ButtonDiv>
+            <ButtonDiv>
+              <TextButtons>{`<Button color='danger'/>`}</TextButtons>
+              <Button color='danger'>Danger</Button>
+            </ButtonDiv>
+
+
+
 
           </ContainerButtons>
 
